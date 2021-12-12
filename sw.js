@@ -1,3 +1,7 @@
 self.addEventListener("install", e => {
-    console.log("Installed!");
-})
+    e.waitUntil(
+        caches.open("static").then(cache => {
+            return cache.addAll(["./", "./style.css", "./script.js", "./img/apple-icon.png"]);
+        })
+    );
+});
