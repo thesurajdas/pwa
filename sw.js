@@ -8,6 +8,7 @@ let files = [
     './style.css',
     './script.js',
     './icons/favicon.ico',
+    './icons/mstile-150x150.png',
     './icons/android-chrome-192x192.png',
     './icons/android-chrome-512x512.png',
     './icons/apple-touch-icon.png',
