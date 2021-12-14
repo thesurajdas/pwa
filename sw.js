@@ -1,11 +1,12 @@
 //Version
-let appVersion = "v1.00";
+let appVersion = "v1.01";
 
 //Files to Cache
 let files = [
     './',
     './style.css',
     './script.js',
+    './icons/favicon.ico',
     './icons/apple-touch-icon.png',
 ]
 
