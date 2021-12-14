@@ -5,6 +5,7 @@ let appVersion = "v1.00";
 let files = [
     './',
     './manifest.json',
+    // './icons/site.webmanifest',
     './style.css',
     './script.js',
     './icons/favicon.ico',
