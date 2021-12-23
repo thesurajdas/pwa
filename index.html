@@ -62,17 +62,17 @@
     </div>
     <script>
         // Register service worker to control making site work offline
-        // if ("serviceWorker" in navigator) {
-        //     navigator.serviceWorker.register("./sw.js")
-        //         .then(res => {
-        //             console.log("SW Registerd!");
-        //         }).catch(err => {
-        //             console.log("Error in Registering", err);
-        //         })
-        // }
-        // else {
-        //     console.log("Not Supported");
-        // }
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("./sw.js")
+                .then(res => {
+                    console.log("SW Registerd!");
+                }).catch(err => {
+                    console.log("Error in Registering", err);
+                })
+        }
+        else {
+            console.log("Not Supported");
+        }
 
         // Code to handle install prompt on desktop
         let deferredPrompt;
