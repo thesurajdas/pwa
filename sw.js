@@ -27,7 +27,7 @@ self.addEventListener('install', event => {
                     })
             })
     )
-    console.info("SW Installed!");
+    console.info("SW Installed!", appVersion);
     self.skipWaiting();
 })
 

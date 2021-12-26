@@ -30,10 +30,36 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <h1>Hello World</h1>
         <img src="./icons/apple-touch-icon.png" class="img-thumbnail" alt="AboutOK Logo">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ea sequi laudantium dolores enim a ipsum
+        <p style="color: rgb(255, 0, 0);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ea sequi
+            laudantium dolores enim a ipsum
             similique exercitationem dolorem eligendi aliquam nesciunt sunt magnam rerum debitis, deserunt tempore sint
             autem necessitatibus quia earum natus corporis ipsam! Repellendus exercitationem inventore rem ut odit saepe
             provident consequatur voluptates dolorem perspiciatis ad temporibus, magnam, commodi iste? Necessitatibus
@@ -104,17 +130,19 @@
             </div>
         </div>
     </div>
-    
+
     <div id="installPWA" class="text-center fixed-bottom alert alert-success alert-dismissible fade show" role="alert">
-        <strong><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAAEuUlEQVR4nO3cT2gcVRzA8e+bza5UStRaTyJSJVRMMonJFiko+CdiaW9CRES82YJgko0XhYLxYGnBJmlLFaRHwZJ68KCI2IIe/BM2a+LGUASlHiqiBksokiZN5nlIN4ltMjuzO7vzm+zve9rMvt33kg+TZHZnBzRN07R61jnZ19I52dcS9zqiyMS9gGrqzA884RnOgHlwZYv9yWJenM6OTMe7sspLLEh74fVuY73vgaab7prFeo8V95z4OY51VZsT9wIqzVj7DrdiAOzEOMfqvZ6oSiwI2Ec3vQeerOdKoizBINy52R0Gmuu5kChLMsiWTEGEpSDCUhBhKYiwFERYCiIsBRGWgghLQYSlIMJSEGEpiLAURFgKIiwFEZaCCEtBhKUgwlIQYSmIsBREWAoiLAURloIIS0GEpSDCUhBhKYiwFERYCiIsBRGWgghLQYSlIMJSEGEpiLAURFgKIiwFEZYMEItx8/273XxfW+9Yb6qeU/eO9aZaZ17dXs85/Yr94jOdEwMHPMxp4P4bmy7hmFeKXcMX/B7nTuSs3/3F7Ijv99aezz2A4aSBZ1m5ZsrvwJFiduS9EMuPvFj3kPZ8rsfDfMIaBsAuPPt5R2HguVrN21bod41h3MAB1i5gcy9w2s0PvlyreYMUK4gxHGXjK/qkrTVna4HSVuh3HetcAHZuvCg7FPWcYYoNZO+3uW1Al8+QyFHKYqy0q3viYDqqOcMWG8h3e0euAdfKDIsMJSAGwJ+F7AfXq52v0uL7lWWw1nI2wMiqUUJgAHxY6TxRFOvfkIzJ5IBigKEVo4TBMPAj6dRbYeeIslhBCtljcylnqYfgKGNuPvdC0OcPuWdcXPKa9hU73v036PPXotiPQwDai2/cZRYXvgS6AwxfxvISho/8BnnG6wiBUUzjPF3IHp8Nst5aJgIE4JEfXrtn2Ws6D7gBhl8Hyv0nNEtAjJSz1DPZdervAGNrnhgQCL2nRJGYPaOUKBCoK4o4DBAIAnVBEYkBQkGgpihiMUAwCNQERTQGCAeBSFHEY0ACQCASlERgQEJAoCqUxGBAgkCgIpREYUDCQCAUSuIwIIEgEAglkRiQUBDwRUksBqwDqfYsjjjaAEUsRtCfr4zzsips2j16xWZuewYoIBgjTIkGgRWUNM6+rYABG5+Ck7i2AkSpxO8hWy0FEZaCCEtBhKUgwlIQYSmIsBREWAoirPUgy74jbXJfGY671pmhTJkhC6Ub60Gu+D2iu3BwWzWLauSc+bndZYasnsa6+lqWhb+Mz7mwi+b24Y7xweGl7c2/zbQOLUawzi1f68xQ5gbGyTJDL5durL24aBnH8PBmjzDWHLIpeyg1P4c7kat6sQ3R/FygYRa+Kt1e+5XlWN+PIWu1K2XtF6XbqyDzzcsfs27X0erW1FR29OvSF6sgv7ScWgD7djxratisgz2MYfXt3f8dhxSzo2eAWK9k0FiZ41PZ0c/Wb7nlwHDH1Tv6gROA75vyWrXZ93dcbX7z5q2bHuy15wf3O8YesdBR24U1WvZXrDlc3DOy4UfCyx59u4WBp7BmP/C4hfsM3A2UO/LUVloE/gH+MIZvPI/zD126/Om558/5vyqiaZqmaRX0H4+Hh9YbTDuNAAAAAElFTkSuQmCC" width="20px" height="20px"> Install </strong> Add to Home Screen
+        <strong><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAAEuUlEQVR4nO3cT2gcVRzA8e+bza5UStRaTyJSJVRMMonJFiko+CdiaW9CRES82YJgko0XhYLxYGnBJmlLFaRHwZJ68KCI2IIe/BM2a+LGUASlHiqiBksokiZN5nlIN4ltMjuzO7vzm+zve9rMvt33kg+TZHZnBzRN07R61jnZ19I52dcS9zqiyMS9gGrqzA884RnOgHlwZYv9yWJenM6OTMe7sspLLEh74fVuY73vgaab7prFeo8V95z4OY51VZsT9wIqzVj7DrdiAOzEOMfqvZ6oSiwI2Ec3vQeerOdKoizBINy52R0Gmuu5kChLMsiWTEGEpSDCUhBhKYiwFERYCiIsBRGWgghLQYSlIMJSEGEpiLAURFgKIiwFEZaCCEtBhKUgwlIQYSmIsBREWAoiLAURloIIS0GEpSDCUhBhKYiwFERYCiIsBRGWgghLQYSlIMJSEGEpiLAURFgKIiwFEZYMEItx8/273XxfW+9Yb6qeU/eO9aZaZ17dXs85/Yr94jOdEwMHPMxp4P4bmy7hmFeKXcMX/B7nTuSs3/3F7Ijv99aezz2A4aSBZ1m5ZsrvwJFiduS9EMuPvFj3kPZ8rsfDfMIaBsAuPPt5R2HguVrN21bod41h3MAB1i5gcy9w2s0PvlyreYMUK4gxHGXjK/qkrTVna4HSVuh3HetcAHZuvCg7FPWcYYoNZO+3uW1Al8+QyFHKYqy0q3viYDqqOcMWG8h3e0euAdfKDIsMJSAGwJ+F7AfXq52v0uL7lWWw1nI2wMiqUUJgAHxY6TxRFOvfkIzJ5IBigKEVo4TBMPAj6dRbYeeIslhBCtljcylnqYfgKGNuPvdC0OcPuWdcXPKa9hU73v036PPXotiPQwDai2/cZRYXvgS6AwxfxvISho/8BnnG6wiBUUzjPF3IHp8Nst5aJgIE4JEfXrtn2Ws6D7gBhl8Hyv0nNEtAjJSz1DPZdervAGNrnhgQCL2nRJGYPaOUKBCoK4o4DBAIAnVBEYkBQkGgpihiMUAwCNQERTQGCAeBSFHEY0ACQCASlERgQEJAoCqUxGBAgkCgIpREYUDCQCAUSuIwIIEgEAglkRiQUBDwRUksBqwDqfYsjjjaAEUsRtCfr4zzsips2j16xWZuewYoIBgjTIkGgRWUNM6+rYABG5+Ck7i2AkSpxO8hWy0FEZaCCEtBhKUgwlIQYSmIsBREWAoirPUgy74jbXJfGY671pmhTJkhC6Ub60Gu+D2iu3BwWzWLauSc+bndZYasnsa6+lqWhb+Mz7mwi+b24Y7xweGl7c2/zbQOLUawzi1f68xQ5gbGyTJDL5durL24aBnH8PBmjzDWHLIpeyg1P4c7kat6sQ3R/FygYRa+Kt1e+5XlWN+PIWu1K2XtF6XbqyDzzcsfs27X0erW1FR29OvSF6sgv7ScWgD7djxratisgz2MYfXt3f8dhxSzo2eAWK9k0FiZ41PZ0c/Wb7nlwHDH1Tv6gROA75vyWrXZ93dcbX7z5q2bHuy15wf3O8YesdBR24U1WvZXrDlc3DOy4UfCyx59u4WBp7BmP/C4hfsM3A2UO/LUVloE/gH+MIZvPI/zD126/Om558/5vyqiaZqmaRX0H4+Hh9YbTDuNAAAAAElFTkSuQmCC"
+                width="20px" height="20px"> Install </strong> Add to Home Screen
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
+    </div>
 
     <script>
-//hide install bar
-function hidePWA() {
-  document.getElementById("installPWA").style.visibility = "hidden";
-}
+        //hide install bar
+        function hidePWA() {
+            document.getElementById("installPWA").style.visibility = "hidden";
+        }
 
         // Register service worker to control making site work offline
         if ("serviceWorker" in navigator) {
