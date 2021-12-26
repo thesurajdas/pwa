@@ -13,6 +13,7 @@ let files = [
     './icons/android-chrome-192x192.png',
     './icons/android-chrome-512x512.png',
     './icons/apple-touch-icon.png',
+    './offline.html'
 ]
 
 
@@ -57,7 +58,7 @@ self.addEventListener('fetch', event => {
         caches.match(event.request)
             .then(res => {
                 return res || fetch(event.request);
-            })
+            }).catch(()=>caches.match('./offline.html'))
     )
 })
 
