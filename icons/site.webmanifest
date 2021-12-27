@@ -5,6 +5,7 @@
     "background_color": "#ffffff",
     "theme_color": "#6c63ff",
     "display": "standalone",
+    "description": "AboutOK is a Professional Social Media Platform. It is a new way to explore and share your stories, photos and videos with your followers around the world.",
     "icons": [
         {
             "src": "/icons/android-chrome-192x192.png",
