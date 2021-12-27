@@ -5,54 +5,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You are offline!</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <!-- PWA components -->
-    <link rel="manifest" href="./manifest.json">
-    <!-- <link rel="manifest" href="./icons/site.webmanifest"> -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
-    <link rel="mask-icon" href="./icons/safari-pinned-tab.svg" color="#6c63ff">
-    <link rel="shortcut icon" href="./icons/favicon.ico">
+    <title>No Connection</title>
+    <!-- PWA components Start -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#6c63ff">
+    <link rel="shortcut icon" href="/themes/sunshine/img/icon.png">
     <meta name="apple-mobile-web-app-title" content="AboutOK">
     <meta name="application-name" content="AboutOK">
     <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="msapplication-config" content="./icons/browserconfig.xml">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
     <meta name="theme-color" content="#6c63ff">
+    <!-- PWA components End -->
+    <link rel="stylesheet" href="/themes/sunshine/stylesheet/style.css">
+    <style>
+        .btn {
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+            font-family: "Lato", sans-serif;
+            box-sizing: border-box;
+            text-decoration: none;
+            outline: 0 !important;
+            word-wrap: break-word;
+            background-image: none;
+            vertical-align: middle;
+            white-space: nowrap;
+            display: inline-block;
+            text-align: center;
+            touch-action: manipulation;
+            cursor: pointer;
+            user-select: none;
+            border: 1px solid transparent;
+            transition: all .1s;
+            padding: 10px 16px;
+            line-height: 1.3333333;
+            color: #ffffff;
+            background-color: #6c63ff;
+            border-color: #6c63ff;
+            z-index: 200;
+            margin: 25px auto 0;
+            min-width: 110px;
+            border-radius: 2em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+
+        body {
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+            font-size: 14px;
+            line-height: 1.42857143;
+            background-color: #f0f2f5;
+            color: #333;
+            text-align: center;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -25%);
+            font-family: "Lato", sans-serif;
+            lear: both;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="text-center">
-        <h1>You are offline!</h1>
-        <p>Connect with Network!</p>
-    </div>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px" y="0px" width="75%" height="75%" viewBox="0 0 300 83" enable-background="new 0 0 300 83"
+        xml:space="preserve">
+        <image id="image0" width="300" height="83" x="0" y="0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAABTCAMAAAASoMrnAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABJlBMVEUAAABtYf9rYf9sYv9s
+Y/9sY/9sY/9sY/9tYv9sY/9sY/9paf9sY/9sYv9xcf9sY/9rYv9rY/9tY/9tZP9sYv9qYP9rYv9s
+Y/9sY/9rZP9sYv9uYv9sY/9sY/9rY/9rYf9xY/9rYv9sY/9sYv9qY/9tYv9tY/9rZf9tYf9wYP9t
+Yv9sY/9tZP9sZP9sZP9tY/9rYv9tYf9rY/9sYv9rZP9sY/9qZf9wYP9rY/9rY/9sY/9sYv9sY/9s
+ZP9tYv9sY/9sY/9rYv9sY/9sY/9sY/9sY/9sY/9rY/9sY/9sZP9sY/9rY/9sYv9sY/9tY/9sZP9t
+Y/9tY/9tZP9rY/9qYf9sZP9sZP9tY/9tY/9sY/9rYv9sY/9rY/9tY/9tY/9tY/9sY/////9ZDC9b
+AAAAYHRSTlMAFTJOaoajv0SV6hFVmQl25GTRUpcYxe3IpIBB88Z5NxJrtm0kW7JMKhB6qG5AgI05
+P19/T5AwIJ/foElQwGBv73CvqvDgp7d0odCdns/rzZuwj5g6kiGBiNSMidiYooMLZTsAAAAAAWJL
+R0RhsrBMhgAAAAd0SU1FB+UMGw0XH0jmBz4AAAiJSURBVHja7Zz5Y9M2FMdNr1BID87SAiX0AExJ
+aBtiJyFJk85Zu3RpF8bY2Njm//+vWGI9yU9PR46udbb6+wtEl58/fpKeZLmOkypVqlSpUqVKlSop
+3ZqZnZtfyCzMz83O3EramKnW7cU7IdadxdtJmzSduptdkkkBr6Xs3aRNmzYtr6yGJq2uLCdt3lTp
+3v3Qpvv3kjZwevQgEw5T5kHSRk6JHg5FNdDDpM2cBj16TLGsPVnfWH+yRpMfP0ra1MT19JlE5Pnm
+ixzk5F5sPpfynj1N2tiE9RLT2NreIdk721u4wMukzU1Uu4jEq9faIq9foTK7SRucoN4MRTUQxvUm
+aZMTkxsP4m+tBd/Gg7+btNFJaU8weDek5DtRcm+SC+WjqoWk7/cyei8I7A8tuy/Kvp/gSv99WA/E
+/Y9UXJSeIJZPCJZ7cFjs68PB5ZsSa5ydkYrviJWPpVApw+QlD8svV9Bq7VAea5mdUlI5SqrqG7vH
+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" />
+    </svg>
+
+    <h1>You are Offline</h1>
+    <p>There is no internet connection!</p>
+    <a href="https://aboutok.com" class="btn">Try Again</a>
 </body>
 
 </html>

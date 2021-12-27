@@ -3,17 +3,27 @@ let appVersion = "v1.00";
 
 //Files to Cache
 let files = [
-    // './',
-    './manifest.json',
-    // './icons/site.webmanifest',
-    './style.css',
-    './script.js',
-    './icons/favicon.ico',
-    './icons/mstile-150x150.png',
-    './icons/android-chrome-192x192.png',
-    './icons/android-chrome-512x512.png',
-    './icons/apple-touch-icon.png',
-    './offline.html'
+    '/manifest.json',
+    '/icons/mstile-150x150.png',
+    '/icons/android-chrome-192x192.png',
+    '/icons/android-chrome-512x512.png',
+    '/icons/apple-touch-icon.png',
+    '/icons/favicon-32x32.png',
+    '/icons/favicon-16x16.png',
+    '/icons/safari-pinned-tab.svg',
+    '/themes/sunshine/img/icon.png',
+    '/themes/sunshine/img/logo.png',
+    '/offline.html',
+    '/themes/sunshine/stylesheet/general-style-plugins.css',
+    '/themes/sunshine/stylesheet/style.css',
+    'themes/sunshine/stylesheet/theme-style.css',
+    '/themes/sunshine/stylesheet/font-awesome-4.7.0/css/font-awesome.min.css',
+    '/themes/sunshine/javascript/jquery-3.1.1.min.js',
+    '/themes/sunshine/player/fluidplayer.min.css',
+    '/themes/sunshine/player/fluidplayer.min.js',
+    '/themes/sunshine/javascript/welcome.js',
+    '/themes/sunshine/javascript/script.js',
+    '/themes/sunshine/javascript/socket.io.js',
 ]
 
 
@@ -58,23 +68,6 @@ self.addEventListener('fetch', event => {
         caches.match(event.request)
             .then(res => {
                 return res || fetch(event.request);
-            }).catch(()=>caches.match('./offline.html'))
+            }).catch(() => caches.match('/offline.html'))
     )
 })
-
-// self.addEventListener("install", e => {
-//     e.waitUntil(
-//         caches.open("static").then(cache => {
-//             return cache.addAll(["./", "./style.css", "./script.js", "./icons/apple-touch-icon.png"]);
-//         })
-//     );
-// });
-
-// self.addEventListener("fetch", e => {
-//     console.log(`Fetch requesting ${e.request.url}`);
-//     e.respondWith(
-//         caches.match(e.request).then(response =>{
-//             return response || fetch (e.request);
-//         })
-//     );
-// });
